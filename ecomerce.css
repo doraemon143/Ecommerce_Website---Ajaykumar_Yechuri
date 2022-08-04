@@ -1,0 +1,369 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+h4{
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+h1{
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h2{
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h6{
+    font-size:17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #e3e6f3;
+    box-shadow: 0px 5px 10px 0px rgb(0, 0,0,0.11) ;
+    z-index: 1;
+    position:sticky;
+    top: 0px;
+}
+
+.head li a{
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: 0.4s ease;
+    position: relative;
+}
+
+.head li a:hover{
+    color: #0cb7ab;
+}
+.head li{
+    list-style-type: none;
+}
+
+.nav{
+    display: flex;
+}
+
+.nav li{
+    padding: 20px;
+}
+.nav li.a:hover
+{
+    color: #0cb7ab;
+}
+
+.nav li a.active:hover::after{
+    content: "" ;
+    width: 80%;
+    height: 2px;
+    background:#0cb7ab; 
+    position: absolute;
+    top: 20px;
+    bottom: 0px;
+    right: 6px;
+}
+
+#middle{
+    background-image: url("(Images)Build and Deploy Ecommerce Website With HTML CSS JavaScript/img/hero4.png");
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#middle h4{
+    padding-bottom: 10px;
+}
+
+#middle h1{
+    color: #10c6ba;
+}
+
+#middle h6{
+    opacity: 0.6;
+    font-weight: 100;
+    padding-bottom: 15px;
+}
+
+#middle button{
+    background-image: url("(Images)Build and Deploy Ecommerce Website With HTML CSS JavaScript/img/button.png");
+    background-size: cover;
+    background-color: transparent;
+    color:#10c6ba;
+    background-repeat: no-repeat;
+    border:0;
+    font-weight: 700;
+    font-size: 18px;
+    width: 30%;
+    height: 10vh;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.section-1{
+    padding: 40px 80px;
+} 
+
+.first{
+    width: 180px;
+    text-align: center;
+    box-shadow: 20px 20px 34px rgb(0, 0,0,0.03);
+    border: 1px solid #0cb7ab;
+    padding: 25px 15px;
+    margin: 25px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feature .first h6{
+    font-size: 17px;
+    background-color: #fddde4;
+    border-radius: 5px;
+    color: #10c6ba;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 3px;
+    display: inline-block;
+    margin-top:10px;
+    font-weight: 650;
+    cursor: pointer;
+}
+
+.feature img{
+    width: 100%;
+}
+
+.feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature .section-1:nth-child(2) h6{
+    background-color: #cdebbc;
+    
+}
+
+.feature .section-1:nth-child(3) h6{
+    background-color: #d1e8f2;
+    
+}
+
+.feature .section-1:nth-child(4) h6{
+    background-color: #cdd4f8;
+    
+}
+
+.feature .section-1:nth-child(5) h6{
+    background-color: #f6dbf6;
+    
+}
+
+.feature .section-1:nth-child(2) h6{
+    background-color: #fff2e5;
+    
+}
+
+#container{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.pro{
+    margin-top: 3%;
+}
+
+#container .product{
+    margin-top: 5%;
+    width: 23%;
+    min-width:250px;
+    border: 2px solid #cdd4f8;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px rgb(0, 0,0,0.03);
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+.pro{
+    text-align: center;
+}
+
+#container .product:hover{
+
+    box-shadow: 30px 36px 30px rgb(0, 0,0,0.03);
+}
+#container .product img{
+    width:100%;
+    border-radius: 20px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.details h6{
+    padding:3px 0;
+}
+.details h4{
+    font-size: 17px;
+    padding: 3px 0;
+}
+
+.details .star{
+    padding: 3px 0;
+    color: rgba(242, 206, 3, 0.971);
+}
+
+.price span{
+    font-weight: 600;
+    color: #10c6ba;
+    font-size: 20px;
+}
+
+.price i{
+    color: #10c6ba;
+    border: 2px solid #10c6ba;
+    border-radius: 50px;
+    padding: 5px;
+    background-color:#e3e6f3;
+    position: relative;
+    left: 165px;
+}
+
+.price i:hover{
+   color: white;
+   background-color: #10c6ba;
+}
+
+.price{
+    display: flex;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.banner{
+    background-image: url("(Images)Build and Deploy Ecommerce Website With HTML CSS JavaScript/img/banner/b2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+}
+
+.banner .btn{
+    background-color: white;
+
+}
+
+.banner .btn:hover{
+    color:white;
+    background-color: #0cb7ab;
+}
+
+.sec-banner .first{
+    background: url("(Images)Build and Deploy Ecommerce Website With HTML CSS JavaScript/img/banner/b17.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width:580px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:center;
+}
+
+.sec-banner{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sec-banner .first .btn{
+    background-color: white;
+}
+
+.sec-banner .first .btn:hover{
+    background-color:#0cb7ab;
+    color: white;
+}
+
+.sec-banner .first h2{
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.third-banner .first h2{
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.third-banner .first{
+    background: url("(Images)Build and Deploy Ecommerce Website With HTML CSS JavaScript/img/banner/b7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width:360px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:center;
+}
+
+.third-banner{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.third-banner .cd{
+    background: url("(Images)Build and Deploy Ecommerce Website With HTML CSS JavaScript/img/banner/b18.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width:360px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:center;
+}
+
+.third-banner .cd2{
+    background: url("(Images)Build and Deploy Ecommerce Website With HTML CSS JavaScript/img/banner/b4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width:360px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:center;
+}
+
+.letter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background:url("(Images)Build and Deploy Ecommerce Website With HTML CSS JavaScript/img/banner/b14");
+    background-color: #041e41;
+    background-position:cover;
+    background-repeat: no-repeat;
+
+}
