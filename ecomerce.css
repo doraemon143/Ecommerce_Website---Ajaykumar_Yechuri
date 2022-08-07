@@ -484,6 +484,10 @@ h6{
     .side{
         display: block;
     }
+     .head{
+        position: sticky;
+        top: 0;
+    }
 }
 
 @media (max-width:477px){
@@ -521,8 +525,10 @@ h6{
         background-position: 70%;
     }
     
-    .head{
+   .head{
         padding:10px 30px;
+        position: sticky;
+        top: 0;
     }
     #middle h1{
         font-size: 20px;
